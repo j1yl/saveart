@@ -1,7 +1,7 @@
 <script lang="ts">
 	import '../app.css';
+	import Nav from '../lib/components/Nav.svelte';
 </script>
 
-<a href="/" class="text-xl">leaveanote</a>
-<a href="/create">create</a>
+<Nav />
 <slot />
