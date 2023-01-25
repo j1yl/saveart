@@ -19,7 +19,7 @@
 				<label for="password" class="font-semibold">password</label>
 				<input type="password" name="password" class="p-2 text-black rounded-xl font-semibold" />
 			</div>
-			<div class="flex justify-between items-center">
+			<div class="flex gap-2 justify-between items-center">
 				<button type="submit" class="text-black bg-white px-4 py-2 rounded-xl font-bold">
 					register
 				</button>
