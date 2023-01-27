@@ -37,6 +37,7 @@
 				<p class="p-2">Your email: {data.session?.user.email}</p>
 				<form method="POST" action="?/new_post" class="flex flex-col gap-4">
 					<InputField placeholder="Add your caption" name="caption" type="text" />
+					<input type="hidden" name="author" value={data.session.user.email} />
 					<button
 						type="submit"
 						class="p-2 rounded-xl bg-[#B6C1FF] outline outline-2 outline-[#1e1e1e] w-full flex justify-center font-semibold"
