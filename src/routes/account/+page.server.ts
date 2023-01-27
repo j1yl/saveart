@@ -1,6 +1,9 @@
+import { PrismaClient } from '@prisma/client';
 import { AuthApiError } from '@supabase/supabase-js';
 import { fail, redirect } from '@sveltejs/kit';
-import type { Actions } from './$types';
+import type { Actions, PageServerLoad } from './$types';
+import { getSupabase } from '@supabase/auth-helpers-sveltekit';
+const prisma = new PrismaClient();
 
 export const actions: Actions = {
 	login: async ({ request, locals }) => {
@@ -24,4 +27,17 @@ export const actions: Actions = {
 
 		throw redirect(303, '/');
 	}
+};
+
+export const load: PageServerLoad = async (event) => {
+	const { session } = await getSupabase(event);
+	return {
+		posts: await prisma.post.findMany({
+			where: {
+				author: {
+					equals: session!.user.email
+				}
+			}
+		})
+	};
 };
