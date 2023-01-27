@@ -1,7 +1,3 @@
-<script lang="ts">
-	export const prerender = true;
-</script>
-
 <section class="px-8 h-[80vh] flex w-full justify-center items-center">
 	<div class="flex flex-col items-center gap-8">
 		<div class="flex flex-col w-full">
