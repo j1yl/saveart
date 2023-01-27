@@ -1,11 +1,11 @@
-<nav class="p-4 mx-auto flex justify-between">
+<nav class="p-6 w-full flex flex-row justify-between">
 	<div>
-		<a href="/" class="font-bold text-2xl">saveart</a>
+		<a href="/" class="text-2xl font-bold">SaveArt</a>
 	</div>
-	<div class="flex gap-4 items-center">
-		<a href="/" class="font-semibold underline text-sm">home</a>
-		<a href="/about" class="font-semibold underline text-sm">about</a>
-		<a href="/posts" class="font-semibold underline text-sm">posts</a>
-		<a href="/login" class="font-semibold underline text-sm">login</a>
+	<div class="flex flex-row gap-8 text-sm underline font-semibold">
+		<a href="/">Home</a>
+		<a href="/create">Create</a>
+		<a href="/about">About</a>
+		<a href="/account">Account</a>
 	</div>
 </nav>

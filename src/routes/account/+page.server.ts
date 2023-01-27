@@ -1,6 +1,7 @@
+import { prisma } from '@prisma/client';
 import { AuthApiError } from '@supabase/supabase-js';
 import { fail, redirect } from '@sveltejs/kit';
-import type { Actions } from './$types';
+import type { Actions, PageServerLoad } from './$types';
 
 export const actions: Actions = {
 	login: async ({ request, locals }) => {
@@ -24,4 +25,10 @@ export const actions: Actions = {
 
 		throw redirect(303, '/');
 	}
+};
+
+export const load: PageServerLoad = async () => {
+	return {
+		status: true
+	};
 };
