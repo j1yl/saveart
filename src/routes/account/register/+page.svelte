@@ -19,7 +19,7 @@
 			class="md:p-32 p-16 outline outline-2 outline-[#1e1e1e] rounded-xl flex flex-col justify-center items-center gap-4 max-w-sm md:max-w-lg w-full"
 		>
 			<InputField name="email" type="email" placeholder="Email" />
-			<InputField name="email" type="password" placeholder="Password" />
+			<InputField name="password" type="password" placeholder="Password" />
 			<button
 				class="p-2 rounded-xl bg-[#B6C1FF] outline outline-2 outline-[#1e1e1e] w-full flex justify-center font-semibold"
 			>
