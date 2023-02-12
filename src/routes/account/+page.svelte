@@ -58,7 +58,8 @@
 			>
 				Login
 			</button>
-			<div class="w-full flex justify-center text-sm">
+			<div class="w-full flex flex-col justify-center text-sm">
+				<p>Demo Account<br />lefodevtesting@gmail.com<br />testaccount123</p>
 				<p>
 					Don&apos;t have an account? <a href="/account/register" class="underline">Sign Up</a>
 				</p>
